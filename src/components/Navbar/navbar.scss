@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.Navbar {
+  // entire nav
+  &_menu {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  // left side of navbar
+  &_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+  }
+  &_logo {
+    font-size: 5rem;
+    margin-right: 4rem;
+    cursor: pointer;
+  }
+  &_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+    cursor: pointer;
+  }
+
+  // right side of navbar
+  &_right {
+  }
+}

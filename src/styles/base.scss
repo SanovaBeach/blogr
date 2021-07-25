@@ -1,0 +1,52 @@
+@import "./variables.scss";
+html {
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: inherit;
+  font-family: $fontOverpass;
+}
+
+.container {
+  width: 100%;
+  padding: 0 5rem;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.login {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.primary-button {
+  color: $lightRed;
+  border: none;
+  padding: 1.5rem 4rem;
+  background-color: $white;
+  border-radius: 10rem;
+  outline: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-color: $veryLightRed;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.Header {
+  background-image: url("../../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, $gradientVeryLightRed, $gradientLightRed);
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-position: center left;
+  object-fit: contain;
+  border-bottom-left-radius: 10rem;
+}

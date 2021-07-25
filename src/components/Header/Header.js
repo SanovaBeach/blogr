@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Showcase from "../Showcase/Showcase";
 import "./header.scss";
 
 const Header = () => {
@@ -7,6 +8,9 @@ const Header = () => {
     <>
       <header className="Header">
         <Navbar />
+        <div className="Header_showcase">
+          <Showcase />
+        </div>
       </header>
     </>
   );

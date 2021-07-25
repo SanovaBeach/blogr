@@ -5,7 +5,14 @@
     linear-gradient(to right, $gradientVeryLightRed, $gradientLightRed);
   height: 60rem;
   background-repeat: no-repeat;
-  background-position: center left;
-  object-fit: contain;
+  background-position: right center;
+  background-size: 100%;
   border-bottom-left-radius: 10rem;
+
+  &_showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
+  }
 }

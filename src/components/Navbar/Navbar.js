@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
-import { FaAngleDown } from "react-icons/fa";
+import { subMenu } from "../../data/subMenu";
+import Submenu from "../Submenu/Submenu";
 
 const Navbar = () => {
   return (
@@ -10,24 +11,9 @@ const Navbar = () => {
           <div className="Navbar_left">
             <h1 className="Navbar_logo">Blogr</h1>
             <ul className="Navbar_links">
-              <li className="Navbar_item">
-                Product{" "}
-                <span className="Navbar_arrow">
-                  <FaAngleDown />
-                </span>
-              </li>
-              <li className="Navbar_item">
-                Category{" "}
-                <span className="Navbar_arrow">
-                  <FaAngleDown />
-                </span>
-              </li>
-              <li className="Navbar_item">
-                Connect{" "}
-                <span className="Navbar_arrow">
-                  <FaAngleDown />
-                </span>
-              </li>
+            {subMenu.map((item, index) => {
+              return <Submenu key={index} item={item} />;
+            })}
             </ul>
           </div>
           <div className="Navbar_right">

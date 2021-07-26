@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.Submenu {
+  &_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    color: black;
+    height: 100%;
+    padding: 3rem 5rem 3rem 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  &_container {
+    position: absolute;
+    top: 10rem;
+    padding: 3rem 6rem 3rem 1.5rem;
+    background-color: $white;
+    color: black;
+    border-radius: 0.5rem;
+  }
+  &_subItem {
+    width: 10rem;
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}

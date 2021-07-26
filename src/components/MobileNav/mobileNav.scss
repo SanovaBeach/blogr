@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.Mobile {
+  position: absolute;
+  left: 50%;
+  top: 15rem;
+  transform: translate(-50%, 0);
+  background-color: $white;
+  width: 10rem;
+  display: block;
+  color: black;
+  width: 90%;
+  max-width: 90vw;
+  height: 100%;
+  max-height: calc(90vh - 15rem);
+
+  &_links {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+
+  &_btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    border-top: 1px solid $grayishBlue;
+    width: 90%;
+    margin-top: 2rem;
+  }
+}

@@ -14,5 +14,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 14rem;
+
+    @media screen and (max-width: $small) {
+      margin-top: 5rem;
+    }
   }
 }

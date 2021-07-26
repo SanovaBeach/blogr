@@ -21,6 +21,13 @@ body {
   padding: 0 5rem;
   max-width: 144rem;
   margin: 0 auto;
+
+  @media screen and (max-width: $medium) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: $small) {
+    padding: 0 1rem;
+  }
 }
 
 .login {
@@ -28,9 +35,16 @@ body {
   border: none;
   background: transparent;
   margin-right: 3rem;
-  color: white;
+  color: $white;
   font-weight: bold;
   cursor: pointer;
+
+  @media screen and (max-width: $medium) {
+    color: $veryDarkBlackBlue;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
 }
 .primary-button {
   color: $lightRed;
@@ -44,8 +58,13 @@ body {
   transition: all 0.3s ease;
 
   &:hover {
-    color: white;
+    color: $white;
     background-color: $veryLightRed;
+  }
+
+  @media screen and (max-width: $medium) {
+    background-color: $veryLightRed;
+    color: $white;
   }
 }
 

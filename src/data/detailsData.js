@@ -27,5 +27,5 @@ export const detailsTwo = {
   capable of producing even the most complicated sites.`,
   image: image2,
   start: true,
-  imgStart: true,
+  imgStart: false,
 };

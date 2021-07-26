@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   border-top-right-radius: 10rem;
+  padding: 7rem 0;
 
   @media screen and (max-width: $small) {
     padding: 4rem 0;
@@ -32,13 +33,13 @@
   }
   // FOOTER CARD
   &_card {
-    @media screen and (max-width: $small) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 4rem;
-    }
+  }
+  @media screen and (max-width: $small) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
   }
   &_title {
     margin-bottom: 4rem;
@@ -49,7 +50,9 @@
   }
   &_item {
     color: $grayishBlue;
-    text-align: center;
+    @media screen and (max-width: $small) {
+      text-align: center;
+    }
   }
 
   // END OF FOOTER CARD

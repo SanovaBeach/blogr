@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.More {
+  background-image: url("../../images/bg-pattern-circles.svg"),
+    linear-gradient(to right, $gradientVDarkGrayBlue, $gradientVDesBlue);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: left center;
+  height: 40rem;
+  color: white;
+  border-bottom-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_left {
+    flex: 0.5;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_image {
+    width: 100%;
+    object-fit: contain;
+  }
+  &_right {
+    flex: 0.5;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &_heading {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  &_desc {
+    max-width: 52rem;
+  }
+}

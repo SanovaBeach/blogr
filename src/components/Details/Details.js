@@ -16,7 +16,11 @@ const Details = ({
       <div className="Details_container container">
         <h1 className="Details_title">{title}</h1>
         <div className={`Details_row  ${start ? "start" : "end"} `}>
-          <section className="Details_rowLeft">
+          <section
+            className={`Details_rowLeft ${
+              start ? "align-end" : "align-start"
+            } `}
+          >
             <div className="Details_content">
               <h3 className="Details_subtitle">{subheading1}</h3>
               <p className="Details_desc">{desc1}</p>

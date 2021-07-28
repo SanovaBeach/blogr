@@ -12,3 +12,11 @@ I use HTML, SCSS, ReactJs to make this website.
 
 Link to the deployed website
 [Blogr](https://frontend-blogr.netlify.app/)
+
+# Check the design here provided by Frontendmentor
+[Design folder](https://github.com/SanovaBeach/blogr/tree/master/src/design)
+
+# The website I made
+
+![Blogr](https://github.com/SanovaBeach/blogr/blob/master/src/design/blogr.png)
+
